@@ -14,4 +14,5 @@ module "eks" {
   vpc_id = local.vpc_id
   subnets = local.subnets
   cluster_name = random_pet.this.id
+  cluster_version = var.cluster_version
 }
