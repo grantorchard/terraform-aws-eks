@@ -9,7 +9,7 @@ resource random_pet "this" {
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "7.0.0"
+  version = "13.0.0"
 
   vpc_id = local.vpc_id
   subnets = local.subnets
