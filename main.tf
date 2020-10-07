@@ -9,10 +9,10 @@ resource random_pet "this" {
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "13.0.0"
+  version = "7.0.0"
 
   vpc_id = local.vpc_id
   subnets = local.subnets
   cluster_name = random_pet.this.id
-  cluster_version = var.cluster_version
+  #cluster_version = var.cluster_version
 }
